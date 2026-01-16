@@ -6,7 +6,7 @@
 We're building it to support more Dynamic and open-ended tasks, on transcripts as well as on audios! If you have any questions, please open an issue or email us!
 
 <p align="center">
-<a href=""><img src="components/IntroSpeechQMAgent_page-0001.jpg" alt="Performance Of AFlow" title="Intro to SpeechQM Agent" width="80%"></a>
+<a href=""><img src="components/IntroSpeechQCAgent_page-0001.jpg" alt="Performance Of AFlow" title="Intro to SpeechQM Agent" width="80%"></a>
 </p>
 
 ## Framework Components
