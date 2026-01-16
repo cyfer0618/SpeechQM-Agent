@@ -1,12 +1,12 @@
-# SPEECHQC-AGENT: A Natural Language Driven Multi-Agent System For Speech Dataset Quality
+# Rolling Out Data Quality Overnight, without losing the plot: A Multi-Agent System for Speech Data Quality Management
 
 
-**SpeechQC-Agent**, a natural language-driven, multi-agent framework designed for automatically verifying the quality of large-scale, multilingual speech-text datasets. Our system uses a central Large Language Model (LLM) to interpret user requests and orchestrate a set of specialized agents to perform audio, transcript, and metadata quality checks. To support this work, we're also releasing **SpeechQC-Dataset**, a realistic, synthetic benchmark of 15.5 hours of Hindi dialogue, which includes various error types to test the system.
+**SpeechQM-Agent**, a natural language-driven, multi-agent framework designed for automatically verifying the quality of large-scale, multilingual speech-text datasets. Our system uses a central Large Language Model (LLM) to interpret user requests and orchestrate a set of specialized agents to perform audio, transcript, and metadata quality checks. To support this work, we're also releasing **SpeechQM-Dataset**, a realistic, synthetic benchmark of 15.5 hours of Hindi dialogue, which includes various error types to test the system.
 
 We're building it to support more Dynamic and open-ended tasks, on transcripts as well as on audios! If you have any questions, please open an issue or email us!
 
 <p align="center">
-<a href=""><img src="components/IntroSpeechQCAgent_page-0001.jpg" alt="Performance Of AFlow" title="Intro to SpeechQC Agent" width="80%"></a>
+<a href=""><img src="components/IntroSpeechQMAgent_page-0001.jpg" alt="Performance Of AFlow" title="Intro to SpeechQM Agent" width="80%"></a>
 </p>
 
 ## Framework Components
@@ -18,14 +18,14 @@ We're building it to support more Dynamic and open-ended tasks, on transcripts a
 - **Output**: The final results from all completed tasks are compiled into a structured report, which provides a clear, human-interpretable summary of the data quality
 
 <p align="center">
-<a href=""><img src="components/workflow.png" alt= " Workflow of SpeechQC-Agent" title=" Workflow of SpeechQC-Agent" width="80%"></a>
+<a href=""><img src="components/workflow.png" alt= " Workflow of SpeechQM-Agent" title=" Workflow of SpeechQM-Agent" width="80%"></a>
 </p>
 
-## SpeechQC-Dataset
-SpeechQC-Dataset, a synthetic dataset created using a multi-LLM pipeline. The dataset generation process involves several steps: we start with a prompt for an LLM agent to create a multi-turn conversation in English. This conversation is then translated into low-resource languages, such as Hindi. Metadata is extracted, and we probabilistically inject perturbations like HTML tags or token swaps to introduce controlled variability in text. Finally, a Text-to-Speech (TTS) model generates audio from the transcripts, and we can optionally corrupt the audio to simulate 24 real-world ASR challenges.
+## SpeechQM-Dataset
+SpeechQM-Dataset, a synthetic dataset created using a multi-LLM pipeline. The dataset generation process involves several steps: we start with a prompt for an LLM agent to create a multi-turn conversation in English. This conversation is then translated into low-resource languages, such as Hindi. Metadata is extracted, and we probabilistically inject perturbations like HTML tags or token swaps to introduce controlled variability in text. Finally, a Text-to-Speech (TTS) model generates audio from the transcripts, and we can optionally corrupt the audio to simulate 24 real-world ASR challenges.
 
 <p align="center">
-<a href=""><img src="components/DataGenerationPipeline.jpg" alt="SpeechQC-Dataset" title="Dataset Pipeline" width="80%"></a>
+<a href=""><img src="components/DataGenerationPipeline.jpg" alt="SpeechQM-Dataset" title="Dataset Pipeline" width="80%"></a>
 </p>
 
 ### Experimental Datasets
@@ -70,7 +70,7 @@ Additionally, we have also utilized IndicVoices and Lahaja datasets by AI4Bharat
 7. After successful completion, the output will be stored in the `results` folder
 
 ## Reproduce the Results in the Paper
-1. We provide the raw output obtained from our experiments in the `outputs` folder. We have also provided the SpeechQC-dataset and results at [link](https://drive.google.com/drive/folders/1VOGTY486zEhL_H4hM5s1H2ONgRgwWYmg?usp=sharing). The dataset is divided into different Vendors with different quality defects to simulate real-world scenarios.
+1. We provide the raw output obtained from our experiments in the `outputs` folder. We have also provided the SpeechQM-dataset and results at [link](https://drive.google.com/drive/folders/1VOGTY486zEhL_H4hM5s1H2ONgRgwWYmg?usp=sharing). The dataset is divided into different Vendors with different quality defects to simulate real-world scenarios.
 
 ## Roadmap
 
@@ -80,7 +80,7 @@ Additionally, we have also utilized IndicVoices and Lahaja datasets by AI4Bharat
 
 ## Citation
 
-If you use SpeechQC-Agent in your research, please cite our paper:
+If you use SpeechQM-Agent in your research, please cite our paper:
 
 ```
 
